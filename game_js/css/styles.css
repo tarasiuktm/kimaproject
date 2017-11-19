@@ -1,0 +1,228 @@
+@font-face {
+    font-family: Royana;
+    src: url('fonts/Royana.ttf');
+}
+
+@font-face {
+    font-family: D-determination;
+    src: url('fonts/D-determination.otf');
+}
+
+@font-face {
+    font-family: Realize My Passion;
+    src: url('fonts/Realize My Passion.otf');
+}
+
+
+
+.buttonStart,
+.buttonRestart {
+    font-family: Royana;
+    height: 61px;
+    width: 190px;
+    margin: 0 auto;
+    background: url("../img/but1.png") no-repeat;
+    color: #FFFFFF;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 30px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+.buttonRestart {
+    background: url("../img/but2.png") no-repeat;
+}
+
+
+.control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timer {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 5px 5px #ffffff, 0 0 1em #ffffff;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-top: 250px;
+    margin-left: 90px;
+}
+
+body {
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    display: flex;
+    margin: 0 auto;
+    /*height: 100%;*/
+    background-size: cover;
+}
+
+.gameName {
+    font-family: D-determination;
+    color: #FFFFFF;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 4px black, 0 0 1em red;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+.gameName p {
+    margin: 70px 70px 130px;
+}
+
+.time,
+.enter_name,
+.best-time {
+    font-family: Realize My Passion;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 4px 4px black, 0 0 1em red;
+    padding: 7px;
+}
+
+#name,
+#best-time {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #EFC9C9;
+    border: 2px solid #963636;
+    border-radius: 30%;
+    color: red;
+    font-weight: bold;
+    padding: 3px;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 30px solid #ffffff;
+    border-image: url("../img/border.png") 30 round round;
+    margin: 0 auto;
+    text-align: justify;
+    position: relative;
+}
+
+#cells {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    margin: 0 auto;
+    text-align: justify;
+    position: relative;
+}
+
+
+#cells a {
+    width: 65px;
+    height: 65px;
+    border: 1px solid #AD9A9C;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img1 {
+    background-image: url("../img/minecraft-sword.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.img2 {
+    background-image: url("../img/minecraft-steve.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.img3 {
+    background-image: url("../img/minecraft-herobrine.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.img4 {
+    background-image: url("../img/minecraft-ground.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.img5 {
+    background-image: url("../img/minecraft-enderman.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.img6 {
+    background-image: url("../img/minecraft-dead-island.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.img7 {
+    background-image: url("../img/minecraft-cow.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.img8 {
+    background-image: url("../img/minecraft-chicken.png");
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.hidden {
+    background-image: url("../img/hidden.png");
+    background-size: 100%;
+}
+
+
+.cbalink {
+    /*display: none;*/
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 980px),
+@media screen and (min-width: 560px)
+ {
+    body {
+        flex-direction: column;
+    }
+
+   .gameName p {
+        margin: 20px 20px auto;
+    }
+    .timer {
+        margin: 0 auto;
+    }
+    .container,
+    #cells {
+        width: 600px;
+        height: 600px;
+    }
+    #cells a {
+        width: 147px;
+        height: 147px;
+    }
+}

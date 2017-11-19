@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Игра!</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/game.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+           <script src="js/wow.js"></script>
+</head>
+
+<body>
+    <div><div class="gameName"><p class="animated wow bounceInDown"">Найдите</p> <p class="animated wow bounceInDown"">одинаковые</p> <p class="animated wow bounceInDown"">картинки!</p>
+    	</div>></div>
+    <div><div class="enter_name">Пожалуйста, введите Ваше имя:</div>
+    <input id="name" type="text" size="30" onchange="if(!!localStorage[this.value] && localStorage[this.value] !== 'undefined') window['best-time'].value = localStorage[this.value];"/>
+    <div class="best-time">Ваше лучшее время:</div>
+    <input id="best-time" type="text" size="10" />
+    <div class="control"><div id="start_button" class="buttonStart" onclick="StartTheGame(this)">Начать игру</div>
+    <div id="restart" class="buttonRestart" onclick="restart()">Рестарт</div></div>
+    <div class="time">Попробуйте сделать это за 120 секунд</div>
+   
+    <div id="game">
+    <div class="container">
+     
+            <div id="cells"></div>
+        
+    </div>
+</div>
+</div>
+<div class="timer">
+	 <span id="my_timer">120</span>
+	</div>
+    <script src="js/game.js"></script>
+<!--        <script type="text/javascript" src="js/jquery-1.x-git.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+     <script type="text/javascript" src="js/slick.min.js"></script> -->
+</body>
+
+</html>
