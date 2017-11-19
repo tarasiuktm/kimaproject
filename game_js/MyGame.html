@@ -17,11 +17,10 @@
     	</div>></div>
     <div><div class="enter_name">Пожалуйста, введите Ваше имя:</div>
     <input id="name" type="text" size="30" onchange="if(!!localStorage[this.value] && localStorage[this.value] !== 'undefined') window['best-time'].value = localStorage[this.value];"/>
-    <div class="best-time">Ваше лучшее время:</div>
-    <input id="best-time" type="text" size="10" />
+    
     <div class="control"><div id="start_button" class="buttonStart" onclick="StartTheGame(this)">Начать игру</div>
     <div id="restart" class="buttonRestart" onclick="restart()">Рестарт</div></div>
-    <div class="time">Попробуйте сделать это за 120 секунд</div>
+    
    
     <div id="game">
     <div class="container">
@@ -31,9 +30,16 @@
     </div>
 </div>
 </div>
+<div class="vvv">
+    <div class="best-t">
+    <div class="best-time">Ваше лучшее время:</div>
+    <input id="best-time" type="text" size="10" />
+</div>
+<div class="time">Попробуйте сделать это за 120 секунд</div>
 <div class="timer">
 	 <span id="my_timer">120</span>
 	</div>
+</div>
     <script src="js/game.js"></script>
 <!--        <script type="text/javascript" src="js/jquery-1.x-git.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>

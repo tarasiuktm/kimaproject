@@ -13,6 +13,12 @@
     src: url('fonts/Realize My Passion.otf');
 }
 
+body {
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    display: flex;
+    margin: 0 auto;
+    background-size: cover;
+}
 
 
 .buttonStart,
@@ -26,9 +32,10 @@
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 30px;
+    margin: 0 35px;
     padding-top: 14px;
     cursor: pointer;
+    margin-bottom: -10px;
 }
 
 .buttonRestart {
@@ -48,18 +55,9 @@
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 5px 5px #ffffff, 0 0 1em #ffffff;
-    margin-bottom: 5px;
     margin-top: 0px;
-    margin-top: 250px;
-    margin-left: 90px;
-}
-
-body {
-    background: url("../img/background.jpg") no-repeat center center fixed;
-    display: flex;
-    margin: 0 auto;
-    /*height: 100%;*/
-    background-size: cover;
+    margin-top: 40px;
+    margin-left: 50px;
 }
 
 .gameName {
@@ -87,6 +85,20 @@ body {
     padding: 7px;
 }
 
+.time {
+    margin-top: 160px;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+.best-t {
+    margin-left: 50px;
+}
+
+.vvv {
+    width: 100%;
+}
+
 #name,
 #best-time {
     text-align: center;
@@ -100,30 +112,31 @@ body {
     color: red;
     font-weight: bold;
     padding: 3px;
+    margin: 15px auto;
 }
 
 #game {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .container {
-    width: 270px;
-    height: 270px;
+    width: 398px;
+    height: 398px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     border: 30px solid #ffffff;
-    border-image: url("../img/border.png") 30 round round;
+    border-image: url("../img/border.png") 30 stretch stretch;
     margin: 0 auto;
     text-align: justify;
     position: relative;
 }
 
 #cells {
-    width: 270px;
-    height: 270px;
+    width: 398px;
+    height: 398px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,8 +148,8 @@ body {
 
 
 #cells a {
-    width: 65px;
-    height: 65px;
+    width: 97px;
+    height: 97px;
     border: 1px solid #AD9A9C;
     float: left;
     display: inline-block;
@@ -204,13 +217,12 @@ body {
 
 
 @media screen and (max-width: 980px),
-@media screen and (min-width: 560px)
- {
+@media screen and (min-width: 560px) {
     body {
         flex-direction: column;
     }
 
-   .gameName p {
+    .gameName p {
         margin: 20px 20px auto;
     }
     .timer {
@@ -224,5 +236,21 @@ body {
     #cells a {
         width: 147px;
         height: 147px;
+    }
+    .time,
+    .enter_name,
+    .best-time,
+    #name,
+    #best-time {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .buttonStart,
+.buttonRestart {
+   background-size: cover;
+    height: 68px;
+    width: 290px;
+    font-size: 48px;
+    padding-top: 22px;
     }
 }

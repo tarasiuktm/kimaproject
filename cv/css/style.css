@@ -104,6 +104,12 @@ hr {
 	font-size: 16px;
 	color: #fff;
 }
+
+.navbar-brand {
+font-size: 28px;
+font-style: italic;
+}
+
 .navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
 	outline: 0;
 }
@@ -161,7 +167,6 @@ hr {
 	color: #fff;
 	background-color: #97DD00;
 	border-color: #97DD00;
-	/*#97e400*/
 }
 .btn-primary i.fa {
 	margin-right: 10px;
@@ -175,7 +180,6 @@ hr {
 	text-align: center;
 	color: #fff;
 	background: url(../img/intro-bg.jpg) no-repeat center top;
-	opacity: 0.7;
 	background-color: #97DD00;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
