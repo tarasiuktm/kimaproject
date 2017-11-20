@@ -86,13 +86,14 @@ body {
 }
 
 .time {
-    margin-top: 160px;
+    margin-top: 50px;
     margin-left: 40px;
     padding-bottom: 5px;
 }
 
 .best-t {
     margin-left: 50px;
+    margin-top: 100px;
 }
 
 .vvv {
@@ -245,12 +246,15 @@ body {
         font-size: 40px;
         margin-top: 10px;
     }
+    .best-t{
+    	margin-top: 15px;
+    }
     .buttonStart,
-.buttonRestart {
-   background-size: cover;
-    height: 68px;
-    width: 290px;
-    font-size: 48px;
-    padding-top: 22px;
+    .buttonRestart {
+        background-size: cover;
+        height: 68px;
+        width: 290px;
+        font-size: 48px;
+        padding-top: 22px;
     }
 }
